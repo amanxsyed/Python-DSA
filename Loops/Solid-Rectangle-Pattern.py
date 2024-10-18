@@ -5,14 +5,14 @@
 
 
 # Function to print a solid rectangle
-def print_rectangle(rows, cols):
+def print_rectangle(rows, columns):
     for i in range(rows):
-        for j in range(cols):
+        for j in range(columns):
             print("*", end=" ")  # Print star and stay on the same line
         print()  # Move to the next line after printing each row
 
 # Example usage
 rows = 5
-cols = 10
-print_rectangle(rows, cols)
+columns = 10
+print_rectangle(rows, columns)
 
