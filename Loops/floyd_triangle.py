@@ -13,7 +13,5 @@ def floyd_triangle(rows):
 #Declaring the variable
 rows = 5
 
-
-
 #Calling the function to print Floyd Triangle
 floyd_triangle(rows)
