@@ -1,4 +1,3 @@
-
 # Step 1: Define the array of integers
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  
 
@@ -11,3 +10,10 @@ for number in numbers:
 
 # Step 4: Print the total sum
 print("The sum of all the elements is:", total_sum)
+
+
+#2nd Method
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  
+# total_sum = sum(numbers)
+
+# print("The sum of all the elements is:", total_sum)
