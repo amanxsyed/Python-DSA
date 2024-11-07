@@ -13,10 +13,10 @@ class SingleLinkedList:
         if not self.head:
             self.head= new_node
             return
-        last_node = self.head
-        while last_node.next:
-            last_node= last_node.next
-        last_node.next= new_node
+        current = self.head
+        while current.next:
+            current= current.next
+        current.next= new_node
 
     def search(self, key):
         current = self.head
