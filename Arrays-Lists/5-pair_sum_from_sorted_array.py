@@ -24,8 +24,8 @@ def find_pair_with_sum(arr, target):
     # Step 7: Return None if no pair is found
     return None
 
-
-arr = [1, 2, 3, 4, 6, 8, 10]  # Sorted array
+#Implementation
+arr = [1, 2, 3, 4, 8, 10, 6]
 length = len(arr)
 target = 6
 print(f"Array: {arr},\nArray Length: {length},\nTarget: {target}")
