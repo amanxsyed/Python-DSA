@@ -33,13 +33,18 @@ class Solution:
 # 👇 User interaction and testing
 if __name__ == "__main__":
     # Prompt user to input a string with brackets
-    user_input = input("🔎 Enter a string containing brackets to validate: ")
+    user_input = input("Enter a string containing brackets to validate: ")
 
     # Create an instance of the Solution class
     sol = Solution()
 
     # Call the isValid method and print result
     if sol.isValid(user_input):
-        print("✅ The input string is VALID!")
+        print("The input string is VALID! ✅")
     else:
-        print("❌ The input string is NOT valid.")
+        print("The input string is NOT valid. ❌")
+
+
+# time complexity: O(n) where n is the length of the string s.
+# space complexity: O(n) in the worst case, when all characters are opening brackets.
+    
