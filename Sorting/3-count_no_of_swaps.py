@@ -1,7 +1,21 @@
+def is_sorted(arr):
+    # Check if the array is already sorted in ascending order
+    for i in range(len(arr) - 1):
+        if arr[i] > arr[i + 1]:
+            return False
+    return True
+
+
+
 def bubble_sort(arr):
     # Bubble Sort algorithm to sort an array in ascending order
     n = len(arr)
     swap_count = 0  # Initialize swap counter
+    
+    if is_sorted(arr):
+        print("Array is already sorted.")
+        return arr
+
     # Traverse through all array elements
     for i in range(n):
         swapped = False
@@ -23,7 +37,7 @@ def bubble_sort(arr):
 
 if __name__ == "__main__":
     # Example usage
-    arr = [64, 34, 25, 12, 22, 11, 90]
+    arr = [56, 89, 49, 435, 62, 51, 88]
     print("Original array:", arr)
     sorted_arr = bubble_sort(arr)
     print("Sorted array is:", sorted_arr)
