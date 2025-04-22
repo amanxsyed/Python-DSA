@@ -4,14 +4,15 @@ def selection_sort(arr):
     # It repeatedly selects the smallest (or largest, depending on the order) element from the unsorted part and moves it to the sorted part.
    
    
-    n = len(arr) # Get the length of the list
+    n = len(arr)          # Get the length of the list
     # The outer loop iterates through the entire array
     for i in range(n): 
-        min_index = i  # unsorted part starting
+        min_index = i     # unsorted part starting
         # The inner loop finds the minimum element in the unsorted part of the array
         # It starts from the next element after i and goes to the end of the array
         for j in range(i+1, n):
-            if arr[j] < arr[min_index]:  # Compare to find the minimum element
+            if arr[j] < arr[min_index]:  # Compare to find the minimum element 
+                #same as arr[j] > arr[min_index] for descending order
                 min_index = j
         arr[i], arr[min_index] = arr[min_index], arr[i]  # Swap with the minimum element found
     # After the inner loop, the smallest element is placed at the beginning of the unsorted part
