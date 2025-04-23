@@ -14,7 +14,7 @@ def kth_smallest(arr, k):
         # The inner loop finds the minimum element in the unsorted part of the array
         for j in range(i + 1, n):
             # Compare to find the minimum element
-            if arr[j] < arr[min_index]:
+            if arr[j] < arr[min_index]:     # change sign to > for descending order
                 min_index = j    # Update min_index if a smaller element is found
         # Swap the found minimum element with the first element of the unsorted part
         arr[i], arr[min_index] = arr[min_index], arr[i]
